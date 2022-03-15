@@ -21,6 +21,14 @@ app.get('/todos', function(request, response){
 
 app.delete('/todos/id', (request, response) => {
 	response.json({message: 'you deleted from your todos'});
+});
+
+app.put('/completed', function(request, response)  {
+	response.json('task completed')
+});
+
+app.post('/todos/new', function(request, response){
+	response.json(todos)
 })
 
 app.listen(PORT, () => {
