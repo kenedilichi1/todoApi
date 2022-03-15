@@ -12,8 +12,15 @@ const todos = [
 	'Review code',
 ]
 
+
+
 app.get('/todos', function(request, response){
 	response.json(todos);
+});
+
+
+app.delete('/todos/id', (request, response) => {
+	response.json({message: 'you deleted from your todos'});
 });
 
 app.put('/completed', function(request, response)  {
