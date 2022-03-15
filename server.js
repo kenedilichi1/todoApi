@@ -16,7 +16,7 @@ app.get('/todos', function(request, response){
 	response.json(todos);
 })
 
-app.post('/todos/new', function(request, response){
+app.post('/todos', function(request, response){
 	response.json(todos)
 })
 
