@@ -18,7 +18,7 @@ app.get('/todos', function(request, response){
 	response.json(todos);
 });
 
-const path = require('path')
+
 app.delete('/todos/id', (request, response) => {
 	response.json({message: 'you deleted from your todos'});
 })
