@@ -27,7 +27,7 @@ app.put('/completed', function(request, response)  {
 	response.json('task completed')
 });
 
-app.post('/todos/new', function(request, response){
+app.post('/todos', function(request, response){
 	response.json(todos)
 })
 
