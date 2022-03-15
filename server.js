@@ -14,7 +14,11 @@ const todos = [
 
 app.get('/todos', function(request, response){
 	response.json(todos);
-})
+});
+
+app.put('/completed', function(request, response)  {
+	response.json('task completed')
+});
 
 app.post('/todos/new', function(request, response){
 	response.json(todos)
