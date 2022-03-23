@@ -20,7 +20,7 @@ app.get('/todos', function(request, response){
 });
 
 
-app.delete('/todo/id', (request, response) => {
+app.delete('/todos/id', (request, response) => {
 	response.json({message: 'you deleted from your todos'});
 });
 
@@ -52,9 +52,9 @@ app.put('/todo/complete', function(request, response)  {
 	 response.json(result);
 });
 
-app.post('/todo', function(request, response){
+app.post('/todos', function(request, response){
 	response.json(todos)
-});
+})
 
 app.listen(PORT, () => {
 	console.log(`Server is running on port ${PORT}`);
