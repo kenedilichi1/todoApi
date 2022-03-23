@@ -30,7 +30,7 @@ app.put('/todo/complete', function(request, response)  {
 
 	taskId = Number(taskId)
 
-	if(isNaN(taskId - 1) || (taskId === 0) || (taskId  > todos.length)) {
+	if(isNaN(taskId) || (taskId === 0) || (taskId  > todos.length)) {
 		const result = {
 			error: true,
 			description: `please type in a valid number. A number between 1 and ${todos.length}`
