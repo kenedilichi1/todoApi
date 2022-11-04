@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require('cors');
 const server = express();
 const router = require('./routers/v1')
-const PORT = 5001;
+
 
 server.use(cors({
   origin: '*',
